@@ -354,6 +354,7 @@ RENAME_AND_MAKE_PRIVATE(CNTK::Function, Outputs);
 RENAME_AND_MAKE_PRIVATE(CNTK::Function, Arguments);
 RENAME_AND_MAKE_PRIVATE(CNTK::Function, FindAllWithName);
 RENAME_AND_MAKE_PRIVATE(CNTK::Function, Evaluate);
+%rename ("%s") CNTK::Variable::Variable(const FunctionPtr& function);
 
 
 MAKE_GETTER(CNTK::Variable, Shape);
@@ -624,7 +625,6 @@ MAKE_GETTER(CNTK::Axis, StaticAxisIndex);
 %typemap(freearg) (char* buffer) ""
 %ignore CNTK::Variable::Variable;
 %ignore CNTK::Variable::operator FunctionPtr;
-%rename ("%s") CNTK::Variable::Variable(const FunctionPtr& function);
 %rename (isSparse) CNTK::Variable::IsSparse;
 %rename (isInput) CNTK::Variable::IsInput;
 %rename (isOutput) CNTK::Variable::IsOutput;
