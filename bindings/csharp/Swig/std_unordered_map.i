@@ -120,7 +120,7 @@
 
     public bool Contains(global::System.Collections.Generic.KeyValuePair<$typemap(cstype, K), $typemap(cstype, T)> item) 
     {
-        return this[item.Key] == item.Value
+        return this[item.Key] == item.Value;
     }
 
     public void CopyTo(global::System.Collections.Generic.KeyValuePair<$typemap(cstype, K), $typemap(cstype, T)>[] array) 
