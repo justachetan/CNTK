@@ -331,6 +331,7 @@ MAKE_GETTER(CNTK::DeviceDescriptor, CPUDevice);
 MAKE_GETTER(CNTK::DeviceDescriptor, Type);
 RENAME_AND_MAKE_PRIVATE(CNTK::DeviceDescriptor, AllDevices);
 RENAME_AND_MAKE_PRIVATE(CNTK::DeviceDescriptor, SetExcludedDevices);
+MAKE_GETTER(CNTK::Axis, Name);
 
 // class Function
 IGNORE_FUNCTION CNTK::Function::BlockArgumentsMapping;
